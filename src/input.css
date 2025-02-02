@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gris-claro: hsl(210, 60%, 98%);
+    --color-gris-oscuro: hsl(219, 14%, 63%);
+    --color-blue: hsl(219, 85%, 26%);
+    --color-gris-oscuroxl: hsl(219, 12%, 42%);
+    --color-gris-claroxl: hsl(205, 33%, 90%);
+    --color-red: hsl(1, 90%, 64%);
+}
+
+@layer components {
+    .root {
+        box-sizing: border-box;
+    }
+    .contenedor {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 95%;
+    }
+    .not-read{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: hsl(1, 90%, 64%);
+        border-radius: 50%;
+        margin-left: 8px;
+    }
+}

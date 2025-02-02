@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="lg:bg-gris-claroxl">
+  <section class="main">
+    <div class="contenedor lg:p-4 lg:mt-10 lg:mb-10 lg:w-150 lg:rounded-xl lg:bg-white ">
+      <div class="flex place-content-between mt-4 mb-4">
+        <h1 class="font-bold notificaciones">Notifications <span id="number" class="bg-blue py-0.5 px-3 ml-1 text-white rounded-lg">3</span></h1>
+        <input id="mark-all" class="text-gris-oscuro cursor-pointer hover:text-blue" type="submit" value="Mark all as read">
+      </div>  
+      <div class="contenedor-notificaciones">
+        <div class="noti flex mb-4 items-center bg-gris-claroxl p-1 rounded-lg cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-mark-webber.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Mark Webber</span> reacted to your recent post <span class="text-black">My first tournament today!</span><span class="status not-read"></span></p>
+            <p class="text-sm text-gris-oscuroxl">1m ago</p>
+          </div>
+        </div>
+        <div class="noti flex mb-4 items-center bg-gris-claroxl p-1 rounded-lg relative cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-angela-gray.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Angela Gray</span> followed you<span class="status not-read"></span></p>
+            <p class="text-sm text-gris-oscuroxl">5m ago</p>
+          </div>
+        </div>
+        <div class="noti flex mb-4 items-center bg-gris-claroxl p-1 rounded-lg cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-jacob-thompson.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Jacob Thompson</span> has joined your group <span class="text-blue font-bold">Chess Club</span><span class="status not-read"></span></p>
+            <p class="text-sm text-gris-oscuroxl">1 day ago</p>
+          </div>
+        </div>
+        <div class="noti flex mb-4 flex-wrap items-center cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-rizky-hasanuddin.webp" alt="fotoPerfil">
+          <div class="ml-4 w-62">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Rizky Hasanuddin</span> sent you a private message<span class="status"></span></p>
+            <p class="text-sm text-gris-oscuroxl">5 days ago</p>
+          </div>
+          <div class="ml-16 mt-2 border border-gris-oscuro">
+            <p class="text-sm p-4 text-gris-oscuroxl hover:bg-gris-claroxl">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.</p>
+          </div>
+          </div>
+        <div class="noti flex mb-4 items-center cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-kimberly-smith.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Kimberly Smith</span> commented on your picture<span class="status"></span></p>
+            <p class="text-sm text-gris-oscuroxl">1 week ago</p>
+          </div>
+        </div>
+        <div class="noti flex mb-4 items-center cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-nathan-peterson.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black">Nathan Peterson</span> reacted to your recent post <span class="text-black">5 end-game strategies to increase your win rate</span><span class="status"></span></p>
+            <p class="text-sm text-gris-oscuroxl">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="noti flex mb-4 items-center cursor-pointer">
+          <img class="w-12 h-12" src="../assets/images/avatar-anna-kim.webp" alt="fotoPerfil">
+          <div class="ml-4">
+            <p class="text-sm text-gris-oscuroxl"><span class="font-bold text-black ">Anna Kim</span> left the group <span class="text-blue font-bold">Chess Club</span><span class="status"></span></p>
+            <p class="text-sm text-gris-oscuroxl">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+</html>
